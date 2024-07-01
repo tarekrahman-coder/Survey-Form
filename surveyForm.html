@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form </title>
+</head>
+<body>
+    
+    <h1 >Survey Form</h1>
+    <form action="#" autocomplete="on">
+        <fieldset>
+            <legend>Personal information:</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required> <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="number">Number</label>
+            <input type="number" id="number" name="number" placeholder="Enter your phone number" required><br><br>
+
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday" required><br><br>
+        
+            <label for="profession">Which option describes you?</label>
+            <select name="profession" id="profession">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="parent">Parent</option>
+                <option value="committee">Committee</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other information</legend>
+
+            <label for="join">Will you join the upcoming class?</label>
+            <input type="radio" id="yes" name="upcoming_class" required>
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="upcoming_class">
+            <label for="no">No</label><br><br>
+
+            <label for="about_program">What did you like about the program?</label><br><br>
+
+            <input type="checkbox" id="program_option_1" name="program_option_1">
+            <label for="program_option_1">Training</label><br>
+
+            <input type="checkbox" id="program_option_2" name="program_option_2">
+            <label for="program_option_2">The learning session from Industry expert</label><br>
+
+            <input type="checkbox" name="program_option_3" id="program_option_3">
+            <label for="program_option_3">Community Meetups</label><br>
+
+            <input type="checkbox" name="program_option_4" id="program_option_4">
+            <label for="program_option_4">Switching to Hybrid Mode</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>technical information</legend>
+            
+            <label for="upload">Upload your all certificates:</label>
+            <input type="file" name="upload" id="upload" accept="image/*" multiple><br><br>
+
+            <label for="comment">Any comments or suggestions?</label><br>
+
+            <textarea name="comment" id="comment" rows="8" cols="40" maxlength="50" placeholder="Describe yourself within 50 letters" required></textarea><br><br>
+
+            <input type="reset" value="Reset" id="reset">
+            <input type="submit" value="Submit" id="submit">
+        </fieldset>
+
+        
+    </form>
+
+
+</body>
+</html>
